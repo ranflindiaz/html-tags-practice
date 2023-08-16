@@ -5,9 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tags Cheat Sheet</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
+    <h1 id="top-of-page">HTML Tags Cheat Sheet</h1>
+
+    <table style="width: 50%; margin: 0 auto;">
+        <tr>
+            <th>Tag</th>
+            <th>Links</th>
+        </tr>
+        <tr>
+            <td>Headings</td>
+            <td><a href="#headings">Click here find more about `headings`</a></td>
+        </tr>
+        <tr>
+            <td>Paragraphs</td>
+            <td><a href="#paragraphs">Click here find more about `paragraphs`</a></td>
+        </tr>
+        <tr>
+            <td>Lists</td>
+            <td><a href="#lists">Click here find more about `lists`</a></td>
+        </tr>
+        <tr>
+            <td>Anchors</td>
+            <td><a href="#anchors">Click here find more about `anchors`</a></td>
+        </tr>
+        <tr>
+            <td>Text Emphasis</td>
+            <td><a href="#textEmphasis">Click here find more about `text emphasis`</a></td>
+        </tr>
+        <tr>
+            <td>Organizing content with `div` and `span`</td>
+            <td><a href="#div-span">Click here find more about `div` and `span`</a></td>
+        </tr>
+        <tr>
+            <td>`br` tag</td>
+            <td><a href="#br-tag">Click here find more about `br` tag</a></td>
+        </tr>
+    </table>
+
+    <h2 id="headings">Headings</h2>
+    <p>
+        Headings from 'h1' to 'h6' identify blocks and sections. Every page must have one 'h1'.
+    </p>
+
+    <h2 id="paragraphs">Paragraphs</h2>
+    <p>
+        Paragraphs of text go in 'p' tags.
+    </p>
+
+    <h2 id="lists">Lists</h2>
+    <h3>Unonrdered List</h3>
+    <p>Unordered list are marked with bullet points an go in 'ul' tags. Each list item goes in an 'li' tag.
+    </p>
+
+    <h4>Types of lists:</h4>
+    <ul>
+        <li>Unordered lists (`ul`)</li>
+        <li>Ordered lists (`ol`)</li>
+    </ul>
+
+    <h3>Ordered Lists</h3>
+    <p>Ordered lists are numbered and go in `ol` tags. Each list item goes in a `li` tag.
+    </p>
+
+    <h4>Polya's Problem Solving Framework</h4>
+    <ol>
+        <li>Understand the problem</li>
+        <li>Come up with a plan</li>
+        <li>Carry out the plan</li>
+        <li>Go back and improve your solution</li>
+    </ol>
+
+    <h2 id="anchors">Anchors (i.e. links)</h2>
+    <p>
+        Anchor tags create links to other pages. The URL goes in the `href` attibute.
+
+        <a href="https://duckduckgo.com">
+            Go to DuckDuckGo to search for more information.
+        </a>
+    </p>
+    <p>
+        Setting `target="_blank"` will open the link in a new window. See
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">MDN
+        </a>
+        for more details.
+    </p>
+
+    <h2 id="textEmphasis">Text Emphasis</h2>
+    <h3>Italic</h3>
+    <em>
+        The `em` element adds extra emphasis to the test within the openning and closing tags. This shows up as italic
+        text in most browsers.
+    </em>
+    <h3>Bold</h3>
+    <strong>
+        You can also use the `strong` element to emphasize text. This shows up as bold in most browsers.
+    </strong>
+
+    <h2 id="div-span">Organizing Content with `div` and `span`</h2>
+    <h3>`div`</h3>
+    <p>
+        The `div` element is a block element, so each `div` will show up on a new line.
+    </p>
+    <div>1st div</div>
+    <div>2nd div</div>
+    <div>3rd div</div>
+
+    <h3>`span`</h3>
+    <p>
+        The `span` element is a inline element, so there will be no line in between each `span`.
+    </p>
+    <span>1st span</span>
+    <span>2nd span</span>
+    <span>3rd span</span>
+
+    <h2 id="br-tag">Breaking text using the `br` tag</h2>
+    <p>
+        I like to use `header` enclousing my `nav`<br>
+        The main content goes inside of the `main` tag<br>
+        Allways include only 1 `title` per document<br>
+    </p>
+
+    <hr>
+    <p>Anchor tags can also create links to a new location on the same page. Instead of putting a URL goes in the "href"
+        attibute, just use the "id" of the element you want to navigate to. This allows you to <a
+            href="#top-of-page">Jump to the top of the page.
+        </a>
+    </p>
 
 </body>
 
